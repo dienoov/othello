@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Othello</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/Othello.js"></script>
+    <script src="js/script.js"></script>
+</head>
+<body>
+<h1>Othello</h1>
+<div class="container">
+    <div class="left">Black : <span>2</span></div>
+    <div class="right">White : <span>2</span></div>
+</div>
+<div class="high-score">
+    <div>High Score : <span>0</span></div>
+</div>
+<table></table>
+<div class="modal">
+    <div class="box">
+        <h2>Choose your pawn to start</h2>
+        <button>
+            <div class="pawn-black" onclick="start(BLACK)"></div>
+        </button>
+        <button>
+            <div class="pawn-white" onclick="start(WHITE)"></div>
+        </button>
+    </div>
+</div>
+<button class="restart" onclick="confirm('are you sure?') && location.reload()">Restart</button>
+</body>
+</html>
